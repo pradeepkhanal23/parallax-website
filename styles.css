@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Itim&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Itim", sans-serif, cursive;
+  background: linear-gradient(#2b1055, #7597de);
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  margin: 1.5rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+}
+
+header a.logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 0.6rem;
+}
+
+header ul li {
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1.6rem;
+  border-radius: 45px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background-color: #fff;
+  color: #2b1055;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+main img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+main img.moon {
+  mix-blend-mode: screen;
+}
+
+main h1.main-title {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 10rem;
+  z-index: 9;
+  right: -290px;
+}
+
+main img.mountain-front {
+  z-index: 10;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #fff;
+  color: #2b1055;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 45px;
+  z-index: 9;
+  transform: translateX(10px) translateY(120px);
+}
+
+section {
+  background-color: #1c0522;
+  padding: 3rem;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000000;
+  /* background-color: white; */
+}
+
+section h1 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+section p {
+  color: #fff;
+  font-size: 1.2em;
+}
