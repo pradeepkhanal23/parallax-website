@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Inconsolata:wght@300&family=Itim&family=League+Spartan:wght@500&family=Montserrat:wght@300&family=Nunito&family=Open+Sans:wght@300&family=Tilt+Prism:wght@400&family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Inconsolata:wght@300&family=Itim&family=Lobster+Two:wght@400&family=Montserrat:wght@300&family=Nunito&family=Open+Sans:wght@300&family=Tilt+Prism:wght@400&family=Tilt+Neon&display=swap");
 
 * {
   margin: 0;
@@ -21,12 +21,18 @@ body {
   overflow-x: hidden;
 }
 
-header {
+.wrapper {
+  /* background-color: rgb(49, 27, 95, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); */
+  /* border: rgb(49, 27, 95, 0.2); */
   position: absolute;
   top: 0;
   left: 0;
-  width: 85%;
-  margin: 1.5rem 8rem;
+  right: 0;
+  width: 90%;
+  margin: 0rem auto;
+  padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,7 +64,7 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: #fff;
-  padding: 0.5rem 1.6rem;
+  padding: 0.2rem 1.3rem;
   border-radius: 45px;
 }
 
